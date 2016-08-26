@@ -1,6 +1,9 @@
 [submodule "content/themes/casper"]
 	path = content/themes/casper
 	url = https://github.com/TryGhost/Casper.git
+[submodule "content/themes/caffeine"]
+	path = content/themes/caffeine
+	url = git@git.coding.net:laichanwai/ghost-theme-caffeine.git
 [submodule "core/client"]
 	path = core/client
 	url = https://github.com/TryGhost/Ghost-Admin.git
