@@ -40,7 +40,23 @@ channelConfig = function channelConfig() {
             },
             slugTemplate: true,
             editRedirect: '/ghost/team/:slug/'
-        }
+        },
+		    blog: {
+			    name: 'tag',
+			    route: '/blog/',
+			    postOptions: {
+				    filter: 'tags:\'blog\''
+			    },
+			    data: {
+				    tag: {
+					    type: 'read',
+					    resource: 'tags',
+					    options: {slug: 'blog'}
+				    }
+			    },
+			    slugTemplate: true,
+			    editRedirect: '/ghost/settings/tags/blog/'
+		    }
     };
 
     return defaults;
